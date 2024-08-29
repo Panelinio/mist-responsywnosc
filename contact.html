@@ -30,38 +30,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?> -->
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+  <head>
     <title>nighttree - Strona główna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="SCRIPT.js"></script>
-    <meta charset="utf-8">
-    <meta name="description" content="NIghttree to strona z srodowiskiem programistycznym dla jezyka nt. nighttree to pseudo jezyk programowania kóry jest rozwijany ">
-    <meta name="keywords" content="język programowania, pseudo jezyk programowania, nighttree, programowanie, kodowanie, kod, programowanie dla zabawy, pisanie kodu, programowanie na stronie">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="NIghttree to strona z srodowiskiem programistycznym dla jezyka nt. nighttree to pseudo jezyk programowania kóry jest rozwijany "
+    />
+    <meta
+      name="keywords"
+      content="język programowania, pseudo jezyk programowania, nighttree, programowanie, kodowanie, kod, programowanie dla zabawy, pisanie kodu, programowanie na stronie"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div id="container">
-        <div id="top-bar">
-            <a href="about.html"><button class="buttony">Projekt</button></a>
-            <a href="comp.html"><button class="buttony">środowisko programistyczne</button></a>
-            <a href="info.html"><button class="buttony">Informacje</button></a>
-            <a href="contact.html"><button class="buttony">Zgłaszanie Błędów</button></a>
-            <a href="statute.html"><button class="buttony">Regulamin</button></a>   
-        </div>
+      <div id="top-bar">
+        <a href="about.html"><button class="buttony">Projekt</button></a>
+        <a href="comp.html"
+          ><button class="buttony">środowisko programistyczne</button></a
+        >
+        <a href="info.html"><button class="buttony">Informacje</button></a>
+        <a href="contact.html"
+          ><button class="buttony">Zgłaszanie Błędów</button></a
+        >
+        <a href="statute.html"><button class="buttony">Regulamin</button></a>
+      </div>
       <form method="post" action="">
-        <input type="text" name="temat" placeholder="Temat zgłoszenia">
-        <br><br>
-        <select id="typ" name='typ'>
-            <option value="BŁĄD">BŁĄD</option>
-            <option value="POMYSŁ/PROPOZYCJA">POMYSŁ/PROPOZYCJA</option>
-            <option value="INNE">INNE</option>
+        <input type="text" name="temat" placeholder="Temat zgłoszenia" />
+        <br /><br />
+        <select id="typ" name="typ">
+          <option value="BŁĄD">BŁĄD</option>
+          <option value="POMYSŁ/PROPOZYCJA">POMYSŁ/PROPOZYCJA</option>
+          <option value="INNE">INNE</option>
         </select>
-        <br><br>
-        <textarea name="opis" placeholder="Treść zgłoszenia" rows="25" cols="50"></textarea>
-        <br><br>
-        <input type="submit" value="Wyślij">
+        <br /><br />
+        <textarea
+          name="opis"
+          placeholder="Treść zgłoszenia"
+          rows="25"
+          cols="50"
+        ></textarea>
+        <br /><br />
+        <input type="submit" value="Wyślij" />
       </form>
     </div>
-    <footer> kontakt: </footer>
-</body>
+    <footer>kontakt:</footer>
+  </body>
 </html>

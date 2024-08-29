@@ -1,94 +1,131 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+  <head>
     <title>nighttree - Strona główna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="SCRIPT.js"></script>
-    <meta charset="utf-8">
-    <meta name="description" content="NIghttree to strona z srodowiskiem programistycznym dla jezyka nt. nighttree to pseudo jezyk programowania kóry jest rozwijany ">
-    <meta name="keywords" content="język programowania, pseudo jezyk programowania, nighttree, programowanie, kodowanie, kod, programowanie dla zabawy, pisanie kodu, programowanie na stronie">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="NIghttree to strona z srodowiskiem programistycznym dla jezyka nt. nighttree to pseudo jezyk programowania kóry jest rozwijany "
+    />
+    <meta
+      name="keywords"
+      content="język programowania, pseudo jezyk programowania, nighttree, programowanie, kodowanie, kod, programowanie dla zabawy, pisanie kodu, programowanie na stronie"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div id="container">
-        <div id="top-bar">
-            <a href="about.html"><button class="buttony">Projekt</button></a>
-            <a href="comp.html"><button class="buttony">środowisko programistyczne</button></a>
-            <a href="info.html"><button class="buttony">Informacje</button></a>
-            <a href="contact.html"><button class="buttony">Zgłaszanie Błędów</button></a>
-            <a href="statute.html"><button class="buttony">Regulamin</button></a>   
+      <div id="top-bar">
+        <a href="about.html"><button class="buttony">Projekt</button></a>
+        <a href="comp.html"
+          ><button class="buttony">środowisko programistyczne</button></a
+        >
+        <a href="info.html"><button class="buttony">Informacje</button></a>
+        <a href="contact.html"
+          ><button class="buttony">Zgłaszanie Błędów</button></a
+        >
+        <a href="statute.html"><button class="buttony">Regulamin</button></a>
+      </div>
+      <article>
+        <div id="docNT">
+          <h1>dokumentacja</h1>
+          <br /><br />
+          -write
+          <br /><br />
+          typ: operator<br />
+          przykład składniowy: 'operator', ':' '"' 'text' '"' ';'<br />
+          przykład uzytkowy: write:"hello";<br />
+          działanie: wypisanie textu<br />
+          <br /><br />
+          -sum
+          <br /><br />
+          typ: operator<br />
+          przykład składniowy: 'operator', ':' 'liczba' ', ' 'liczba' ', '
+          'liczba' ';'<br />
+          przykład uzytkowy: sum: 30, 60, 70;<br />
+          działanie: sumuje podane wartosci<br />
+          <br /><br />
+          -equal
+          <br /><br />
+          typ: operator<br />
+          przykład składniowy: 'equal' ':' 'wartość1' ', ' 'wartość2' '['
+          'pseudooperator' ']'';'<br />
+          przykład użycia: equal:5, 3 [-];<br />
+          działanie: w zaleznosic od pseudooperatora wykonuje działania na
+          wartość2 i wartości1 i zwraca wynik; <br />
+          <br /><br />
+          -nemo
+          <br /><br />
+          typ: zmienna <br />
+          przykład składniowy: 'nemo' 'nazwa' '=' '"' 'wartosc' '"' ';' <br />
+          przykład uzytkowy: nemo miesiąc = "luty";<br />
+          działanie: ustawienie zmiennej<br />
+          <br /><br />
+          -del
+          <br /><br />
+          typ: operator <br />
+          przykład składniowy: 'del' ':' 'nazwa' ';' <br />
+          przykład uzytkowy: del: miesiąc;<br />
+          działanie: usuwanie zmiennej, funckji, itp<br />
+          <br /><br />
+          -for
+          <br /><br />
+          typ: instrukcja<br />
+          przykład składniowy: 'for' '(' 'ilosc literacji' ', ' 'operator' ')'
+          ':' '[' '"' 'text' '"' ']'';' <br />
+          przykład uzytkowy: for(3, write):["hello"]; <br />
+          działanie: powtarza dany proces operatora przez ilosc literacji<br />
         </div>
-          <article>
-            <div id="docNT">
-            <h1>dokumentacja</h1>
-            <br><br>            
-            -write 
-            <br><br>
-            typ: operator<br>
-            przykład składniowy: 'operator', ':' '"' 'text' '"' ';'<br>
-            przykład uzytkowy:  write:"hello";<br>
-            działanie: wypisanie textu<br>
-            <br><br>
-            -sum
-            <br><br>
-            typ: operator<br>
-            przykład składniowy: 'operator', ':'  'liczba' ', ' 'liczba' ', ' 'liczba'   ';'<br>
-            przykład uzytkowy:  sum: 30, 60, 70;<br>
-            działanie: sumuje podane wartosci<br>
-            <br><br>
-            -equal
-            <br><br>
-            typ: operator<br>
-            przykład składniowy: 'equal' ':' 'wartość1' ', ' 'wartość2' '[' 'pseudooperator' ']'';'<br>
-            przykład użycia:  equal:5, 3 [-];<br>
-            działanie: w zaleznosic od pseudooperatora wykonuje działania na wartość2 i wartości1 i zwraca wynik; <br>
-            <br><br>
-            -nemo
-            <br><br>
-             typ: zmienna <br>
-             przykład składniowy: 'nemo' 'nazwa' '=' '"' 'wartosc' '"' ';'   <br>
-            przykład uzytkowy: nemo miesiąc = "luty";<br>
-            działanie: ustawienie zmiennej<br>
-            <br><br>
-            -del
-            <br><br>
-             typ: operator <br>
-             przykład składniowy: 'del' ':' 'nazwa' ';'  <br>
-            przykład uzytkowy: del: miesiąc;<br>
-            działanie: usuwanie zmiennej, funckji, itp<br>
-            <br><br>
-            -for
-            <br><br>
-             typ: instrukcja<br>
-             przykład składniowy: 'for' '(' 'ilosc literacji' ', ' 'operator' ')' ':' '[' '"' 'text' '"' ']'';'  <br>
-            przykład uzytkowy: for(3, write):["hello"];  <br>
-            działanie: powtarza dany proces operatora przez ilosc literacji<br>
-            </div>
-            <div id="changelog">
-                <div>??poprawiono wyrazenie reguralne dla equal teraz equal z powrótem działa</div>
-                <div>??Dodano pierwszą funkcje wbudowaną Maths.pow i drugą Maths.round . ciekawe ze jako jedyne mają () na razie tylko osobno działają(w sensie ze nie mozna uzyc np w equal tego oraz nie obsługuje zmiennych tylko liczby na razie)</div>
-                <div>??Dodano nowe operatory(pseudooperatory) dla equal : **, # i % odpowiednio: potegowanie losowe procenty </div>
-                <div>??Dodano  petle for , na razie dla write , i lekko obsługuje zmienne 9.6.2024 </div>
-                <div>??Dodano operator usuwania del 8.6.2024</div>
-                <div>??Dodano zmienną nemo, na razie tylko dla write 7.6.2024</div>
-                <div>??Dodano opcje importu i exportu w menu pod przyciskiem esc 6.6.2024</div>
-                <div>??Dodano menu na przycisk escape 6.6.2024</div>
-                <div>??Naprawienie systemu zgłoszen 31.05.2024</div>
-                <div>??Dodano operatory sum, equal oraz bardzo bardzo podstawowy system błedów 31.05.2024</div>
-                <div>??Poprawiono interpreter, naprawiono bład białych znaków przy operatorze write 30.05.2024</div>
-                <div>??Dodano pierwszy operator write 27.05.2024</div>
-            </div>
-            <div id="plany">
-            Planuje dodac w wersji 0.07 <br>
-            - Maths.ceil <br>
-            - Maths.floor <br>
-            - Maths.random <br>
-            - i moze cos jeszcze oraz opis wbudowanych funkcji w dokumentacji <br>
-            <br><br>
-            Planuje dodac niedługo ?nic chyba ze ulepszenie lekko interpretera?<br>
-            </div>
-          </article>
+        <div id="changelog">
+          <div>
+            ??poprawiono wyrazenie reguralne dla equal teraz equal z powrótem
+            działa
+          </div>
+          <div>
+            ??Dodano pierwszą funkcje wbudowaną Maths.pow i drugą Maths.round .
+            ciekawe ze jako jedyne mają () na razie tylko osobno działają(w
+            sensie ze nie mozna uzyc np w equal tego oraz nie obsługuje
+            zmiennych tylko liczby na razie)
+          </div>
+          <div>
+            ??Dodano nowe operatory(pseudooperatory) dla equal : **, # i %
+            odpowiednio: potegowanie losowe procenty
+          </div>
+          <div>
+            ??Dodano petle for , na razie dla write , i lekko obsługuje zmienne
+            9.6.2024
+          </div>
+          <div>??Dodano operator usuwania del 8.6.2024</div>
+          <div>??Dodano zmienną nemo, na razie tylko dla write 7.6.2024</div>
+          <div>
+            ??Dodano opcje importu i exportu w menu pod przyciskiem esc 6.6.2024
+          </div>
+          <div>??Dodano menu na przycisk escape 6.6.2024</div>
+          <div>??Naprawienie systemu zgłoszen 31.05.2024</div>
+          <div>
+            ??Dodano operatory sum, equal oraz bardzo bardzo podstawowy system
+            błedów 31.05.2024
+          </div>
+          <div>
+            ??Poprawiono interpreter, naprawiono bład białych znaków przy
+            operatorze write 30.05.2024
+          </div>
+          <div>??Dodano pierwszy operator write 27.05.2024</div>
+        </div>
+        <div id="plany">
+          Planuje dodac w wersji 0.07 <br />
+          - Maths.ceil <br />
+          - Maths.floor <br />
+          - Maths.random <br />
+          - i moze cos jeszcze oraz opis wbudowanych funkcji w dokumentacji
+          <br />
+          <br /><br />
+          Planuje dodac niedługo ?nic chyba ze ulepszenie lekko interpretera?<br />
+        </div>
+      </article>
     </div>
-    <footer> kontakt:  </footer>
-</body>
+    <footer>kontakt:</footer>
+  </body>
 </html>
